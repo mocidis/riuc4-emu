@@ -11,10 +11,10 @@ RIU card control protocol version 0.2
     + 1 Serial port interface to RIU processor unit
     + 4 x blue-ptt + 4 x green-sq LED indicators for the 4 E&M interfaces
 - Control protocol
-    1.1 enable TX --> Turn PTT on/off
-    1.2 disable TX --> PTT on/off is ineffective
-    2.1 enable RX --> Being able to generate SQ status
-    2.2 disable RX --> Will not generate SQ status
+    + enable TX --> Turn PTT on/off
+    + disable TX --> PTT on/off is ineffective
+    + enable RX --> Being able to generate SQ status
+    + disable RX --> Will not generate SQ status
     
 - Control commands (this device receive and behave accordingly) & status (this device will generate to indicate its operational state)
 
