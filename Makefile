@@ -13,7 +13,7 @@ $(APP): $(MAIN_SRC:.c=.o)
 	gcc -o $@ $^ $(LIBS)
 
 $(TEST): $(TEST_SRC:.c=.o)
-	gcc -o $@ $^
+	gcc -o $@ $^ $(LIBS)
 
 $(TEST_SRC:.c=.o): %.o: $(MAIN_DIR)/src/%.c
 	gcc -o $@ -c $< $(CFLAGS)
